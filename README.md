@@ -7,12 +7,12 @@ Simple ObjC NSObject to capsulize CLLocationManager
 
 // ViewController.m
 
+```objc
 #import "DeviceLocation.h"
 
 DeviceLocation *deviceLocation = [[DeviceLocation alloc] init];
 deviceLocation.delegate = self
 
-```objc
 - (void)userLocationDidUpdate:(CLLocation *)newLocation oldLocation:(CLLocation *)oldLocation
 {
   // do things here <-	
